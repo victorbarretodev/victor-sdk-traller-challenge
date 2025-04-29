@@ -1,0 +1,15 @@
+{
+  "name": "victor-sdk-traller-challenge",
+  "version": "1.0.0",
+  "description": "Candidate Instructions",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.9.0"
+  }
+}
