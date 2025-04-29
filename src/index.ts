@@ -1,4 +1,4 @@
-import { ValidationException } from './errors';
+import { ValidationException, NotFoundUserException } from './errors';
 import { 
     UserFechListData, 
     UserFetchData, 
@@ -7,7 +7,6 @@ import {
     UserUpdateDataResponse 
 } from './types';
 import { apiService } from './utils';
-import { NotFoundUserException } from './errors/NotFoundUserException';
 
 export async function fetchUserData(payload: UserFetchData): Promise<UserFetchDataResponse> {
     if(!payload.userId || !payload.token) throw new ValidationException();
